@@ -28,3 +28,5 @@ echo 127.0.0.1 > ansible_hosts
 # Work around the key authentication
 ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N "" && cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ansible-playbook -i ansible_hosts configure.yaml
+source ~/.bashrc
+newgrp docker
