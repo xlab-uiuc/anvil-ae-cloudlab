@@ -40,7 +40,7 @@ node.hardware_type = phystype
 
 # Acto startup
 startup_script_path = os.path.join(cl_repo_path, startup_script_rel_path)
-node.addService(pg.Execute(shell="bash", command=startup_script_path))
+# node.addService(pg.Execute(shell="bash", command=startup_script_path))
 
 # Print the RSpec to the enclosing page.
 pc.printRequestRSpec(request)
